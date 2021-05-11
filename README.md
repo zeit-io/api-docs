@@ -38,13 +38,6 @@ curl -X GET "https://zeit.io/api/v1/usr/projects" -H  "accept: application/json"
 
 The ZEIT.IO API consumes and produces JSON! XML and other formats are not supported! 
 
-## Time values 
-
-Time values are always stored as Integer in the database and represent the seconds. 
-If a user records a `time_record` of one hour, ZEIT.IO will store the value of 3600 as `time_record.duration` in the database. 
-Because 3600 seconds is equal to one hour. 
-The UI is responsible for formating the values in a human readible way.
-
 ## Currency values
 
 ZEIT.IO supports multiple currencies and calculates various currency values. 
@@ -52,9 +45,16 @@ Currency values are always stored as Integer in the database and represent the c
 Properties like `amount` and `hourly_wage` contain always the cent values. 
 The UI is responsible for formating the values in a human readible way. 
 
+## Time duration values 
 
+Time values are always stored as Integer in the database and represent the seconds. 
+If a user records a `time_record` of one hour, ZEIT.IO will store the value of 3600 as `time_record.duration` in the database. 
+Because 3600 seconds is equal to one hour. 
+The UI is responsible for formating the values in a human readible way.
 
+## Time zones 
 
-
-
-
+ZEIT.IO converts all time values from the users time zone to UTC and stores all times in UTC format in the database. 
+When fetching the data, ZEIT.IO converts the times back from UTC to the users time zone. 
+For this process it is very important that the user correctly configures his/her time zone. 
+The time zone can be configured in the users settings under [Localization](https://zeit.io/en/settings/localization).
