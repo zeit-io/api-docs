@@ -80,7 +80,7 @@ Here is an example payload for
 
  - Project budget type: hourly 
  - Project hour budget: 500 hours 
- - Project currency budget: 57500 EUR
+ - Project currency budget: 57.500,00 EUR
  - Contract compensation type: hourly 
  - Contract purchase rate: 99 EUR / hour 
  - Contract sell rate: 115 EUR / hour
