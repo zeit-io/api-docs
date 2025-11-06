@@ -54,6 +54,14 @@ If a user records a `time_record` of one hour, ZEIT.IO will store the value of 3
 Because 3600 seconds is equal to one hour. 
 The UI is responsible for formating the values in a human readible way.
 
+## Date formats 
+
+When sending dates to the API, the format is obviously very important.
+The ZEIT.IO API supports various formats.
+However, it is recommended to send all dates in the following format: `<%Y-%m-%d>`. 
+Here an example. The 1st of April 2026 would be formated like this: `2026-04-01`.
+
+
 ## Time zones 
 
 ZEIT.IO converts all time values from the users time zone to UTC and stores all times in UTC format in the database. 
