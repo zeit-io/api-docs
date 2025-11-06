@@ -90,6 +90,7 @@ Here is an example payload for
 
 ```json
 {
+  "currency": "EUR",
   "cntr_title": "OKR Coaching",
   "cntr_content": "contract content",
   "cntr_recipient_email": "z_worker@test.io",
@@ -146,6 +147,7 @@ Here is an example payload for
   "proj_day_budget": 0,
   "proj_day_budget_rate": 0,
   "proj_budget": 5750000,
-  "proj_budget_expenses": 0
+  "proj_budget_expenses": 0,
+  "proj_can_be_overbooked": false
 }
 ```
