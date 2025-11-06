@@ -15,6 +15,7 @@ Here are the fileds for the payload:
 
 | **Field Name**                      | **Example Value**           | **Description**                                                                                             |
 |-------------------------------------|-----------------------------|-------------------------------------------------------------------------------------------------------------|
+| "currency"                          | "EUR"                       | The selected currency ISO-Code.                                                                             |
 | "cntr_title"                        | "OKR Expert"                | Title of the contract                                                                                       | 
 | "cntr_content"                      | "lorem ipsum"               | The full content of the contract. Can be empty                                                              | 
 | "cntr_recipient_email"              | "z_worker@zeit.io"          | Email of the freelancer who should receive the contract                                                     | 
@@ -69,9 +70,10 @@ Here are the fileds for the payload:
 | "proj_hour_budget"                  | 500                         | The hour budget. How many hours max can be booked on this project?                                          |
 | "proj_hour_budget_wage"             | 11500                       | The average billing rate per hour we bill to the customer.                                                  |
 | "proj_day_budget"                   | 0                           | The day budget. In case budget type is `days`. How many days max ca be booked on this project?              |
-| "proj_day_budget_rate"              | 0                           | The average billing rate per day we bill to the customer. |
-| "proj_budget"                       | 5750000                     | Currency budget for time tracking.In this example `57.500,00` EUR. | 
-| "proj_budget_expenses"              | 0                           | Currency budget for expenses. | 
+| "proj_day_budget_rate"              | 0                           | The average billing rate per day we bill to the customer.                                                   |
+| "proj_budget"                       | 5750000                     | Currency budget for time tracking.In this example `57.500,00` EUR.                                          | 
+| "proj_budget_expenses"              | 0                           | Currency budget for expenses.                                                                               |
+| "proj_can_be_overbooked"            | false                       | Controls whether the project can be overbooked or not. Default is false.                                    |
 
 
 ## Example 1 
