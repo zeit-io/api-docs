@@ -42,8 +42,10 @@ The ZEIT.IO API consumes and produces JSON! XML and other formats are not suppor
 
 ZEIT.IO supports multiple currencies and calculates various currency values. 
 Currency values are always stored as Integer in the database and represent the cent values. 
+For example, the currency value `123,95` EUR would be stored as `12395`. 
 Properties like `amount` and `hourly_wage` contain always the cent values. 
 The UI is responsible for formating the values in a human readible way. 
+All inputs for the API expect currency values as Integer, representing the cents! 
 
 ## Time duration values 
 
